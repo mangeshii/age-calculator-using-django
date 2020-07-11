@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                height: 500px;
+                padding: 0px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0px
+            }
+
+            .smallcont {
+                padding: 100px;
+                background-color: #ececec;
+                height: 250px;
+                margin-top: 2px;
+                width: 500px;
+
+            }
+
+            .heading {
+                border: 2px solid blue;
+                height: 40px;
+                width: 700px;
+                background-color: #1261A0;
+                color: white;
+                font-size: 25px;
+                text-align: center;
+                padding-top: 10px
+            }
+
+            .calc {
+                font-size: 25px;
+            }
+
+            .topic {
+                display: inline;
+                justify-content: center;
+                text-align: center;
+                margin-left: 600px;
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .para {
+                display: block;
+                justify-content: center;
+                width: 700px;
+                margin-left: 600px;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 0px
+            }
+
+            .about {
+                padding-top: 100px
+            }
+
+            #fname {
+                font-size: 25px;
+                margin-bottom: 20px;
+                margin-left: 53px;
+            }
+
+            #bdate {
+                font-size: 25px;
+                margin-bottom: 20px;
+                margin-left: 22px;
+                width: 310px;
+            }
+
+            #bmonth {
+                font-size: 25px;
+                margin-bottom: 20px;
+                width: 310px;
+            }
+
+            #byear {
+                font-size: 25px;
+                margin-bottom: 30px;
+                margin-left: 20px;
+                width: 310px;
+            }
+
+            #but {
+                font-size: 20px;
+                padding: 12px 30px;
+                background-color: #4F7942;
+                color: white;
+                margin-left: 170px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="about">
+            <h1 class="topic">Age Calculator</h1>
+            <p class="para">The Age Calculator can determine the age or interval between two dates. The calculated age
+                will be displayed in years,
+                months and days.</p>
+        </header>
+        <div class="container">
+            <div class="heading">Modify the values and click the calculate button to use</div>
+            <div class="smallcont">
+                <form action='/result' method="get">
+                    <label for="fname" class="calc">Name:</label>
+                    <input type="text" id="fname" name="text"><br>
+
+                    <label for="bdate" class="calc">Birthdate:</label>
+                    <input type="number" id="bdate" min='1' max='31' name="date"><br>
+
+                    <label for="bmonth" class="calc">Birthmonth:</label>
+                    <input type="number" id="bmonth" min='1' max='12' name="month"><br>
+
+                    <label for="byear" class="calc">Birthyear:</label>
+                    <input type="number" id="byear" min='1970' max='2020' name="year"><br>
+
+
+                    <input type="submit" id="but" value="Calculate">
+
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+
+
+<!-- name
+date
+month
+year -->
