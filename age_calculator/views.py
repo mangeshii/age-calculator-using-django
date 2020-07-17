@@ -13,7 +13,7 @@ def output(request):
     birthmonth = (request.GET.get('month', 'default'))
     birthyear = (request.GET.get('year', 'default'))
 
-    present_date = date.today().day
+    present_date = date.today().day 
     present_month = date.today().month
     present_year = date.today().year
 
